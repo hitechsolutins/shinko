@@ -1,0 +1,51 @@
+<!-- Add Purchase Order Form -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Purchase Order</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="purchaseOrders.html">Purchase Orders</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h1>Add New Purchase Order</h1>
+            <form action="#" method="post">
+                <label for="poNumber">Purchase Order Number:</label>
+                <input type="text" id="poNumber" name="poNumber" required>
+
+                <label for="poDate">Date:</label>
+                <input type="date" id="poDate" name="poDate" required>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="pending">Pending</option>
+                    <option value="in-progress">In Progress</option>
+                    <option value="completed">Completed</option>
+                </select>
+
+                <label for="remarks">Remarks:</label>
+                <textarea id="remarks" name="remarks"></textarea>
+
+                <button type="submit" class="btn">Add Purchase Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Company Name. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

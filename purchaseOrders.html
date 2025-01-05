@@ -1,0 +1,126 @@
+<!-- Purchase Orders Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Orders</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .po-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .po-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .po-card img {
+            width: 100%;
+            height: auto;
+            max-height: 150px;
+            object-fit: cover;
+        }
+
+        .po-card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .po-card p {
+            font-size: 1em;
+            margin: 10px 0;
+        }
+
+        .po-card .view-details {
+            display: inline-block;
+            padding: 10px 15px;
+            color: #fff;
+            background-color: #007bff;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        .po-card .view-details:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="purchaseOrders.html" class="active">Purchase Orders</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="po-section">
+            <h1>Purchase Orders</h1>
+            <p>Welcome to the Purchase Orders page. Here, you can view and track the status of all purchase orders. Click on a card to view detailed information for each purchase order.</p>
+
+            <div class="po-cards">
+                <div class="po-card">
+                    <img src="images/EK 163.png" alt="EK 163">
+                    <h2>EK 163</h2>
+                    <p>Status: In Progress</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=1287897443&single=true" class="view-details">View Details</a>
+                </div>
+
+                <div class="po-card">
+                    <img src="images/EK 164.png" alt="EK 164">
+                    <h2>EK 164</h2>
+                    <p>Status: Completed</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=876883192&single=true" class="view-details">View Details</a>
+                </div>
+
+                <div class="po-card">
+                    <img src="images/MIX POS.png" alt="MIX PO">
+                    <h2>MIX PO</h2>
+                    <p>Status: Pending</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=1623558000&single=true" class="view-details">View Details</a>
+                </div>
+
+                <div class="po-card">
+                    <img src="images/HD 474.png" alt="HD 474">
+                    <h2>HD 474</h2>
+                    <p>Status: In Progress</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=1456779740&single=true" class="view-details">View Details</a>
+                </div>
+
+                <div class="po-card">
+                    <img src="images/HE 571.png" alt="HE 571">
+                    <h2>HE 571</h2>
+                    <p>Status: On Hold</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=96099831&single=true" class="view-details">View Details</a>
+                </div>
+
+                <div class="po-card">
+                    <img src="images/PENDING POS.png" alt="PENDING POS">
+                    <h2> PENDING POS</h2>
+                    <p>Status: Completed</p>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRagOu6ETuGzk1T-T7e2u3IgcHPEBlVRkBtX3RLqRrXu7yW5OvsvTjGqPI1FI0oGqASZMXsY7Ln-HrI/pubhtml?gid=2023422171&single=true" class="view-details">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Shinko Machines and Tools Pvt Ltd, All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
